@@ -8,7 +8,7 @@
 # 1. Redistributions of this script must retain the above copyright
 #    notice, this list of conditions and the following disclaimer.
 #
-#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+#  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS AND ANY EXPRESS OR IMPLIED
 #  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
 #  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO
 #  EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
@@ -28,7 +28,7 @@
 #   A -> B: {K}KBS,{#s}K
 #
 
-WEBSERVICE_TO_HACK="http://10.0.0.5/compleke/CgMo6qVL/index.php"
+WEBSERVICE_TO_HACK="http://10.0.0.5/compleke/CgMo6qVL/"
 
 # You have the following key KES with the server
 KES="1788279208104052375212791311701435195696"
@@ -52,7 +52,7 @@ function injectB() {
   # ----------------------------------------------------------
   
   # We need to sanitise the "+" of base64 before sending it
-  echo $(sanitise_b64 "$PAYLOAD")
+  echo $(sanitise_b64 "QSxF")
 }
 # ---------------------------------------------------------------------
 

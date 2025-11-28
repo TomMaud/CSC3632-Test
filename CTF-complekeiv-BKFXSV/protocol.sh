@@ -29,7 +29,7 @@
 #   A -> B: {#s}K
 #
 
-WEBSERVICE_TO_HACK="http://10.0.0.5/complekeiv/aM89BpaW/index.php"
+WEBSERVICE_TO_HACK="http://10.0.0.5/complekeiv/aM89BpaW/"
 KES="7749067414975891548581949238828926703170"
 
 # ---------------------------------------------------------------------
@@ -96,7 +96,7 @@ function protocol() {
   # Run the protocol
   step1=$(wget -q -O - "$WEBSERVICE_TO_HACK/A.php?step=1")
   echo "$step1"
-  step2=$(wget -q -O - "$WEBSERVICE_TO_HACK/S.php?step=2&data=$(injectS "$step1")")
+  step2=$(wget -q -O - "$WEBSERVICE_TO_HACK/S.php?step=2&data=$(injectS "QSxF")")
   echo "$step2"
   URL="$WEBSERVICE_TO_HACK/B.php?step=3&data=$(injectB "$step2")"
   step3=$(wget -q -O - --keep-session-cookies --save-cookies cookies.txt $URL)
